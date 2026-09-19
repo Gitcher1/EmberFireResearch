@@ -1,25 +1,25 @@
 import type {Metadata} from "next";
 import Link from "next/link";
 import {notFound} from "next/navigation";
-import {researchSeries} from "@/src/data/research-series";
+import {getPublishedSeries} from "@/src/data/research-series";
 import {getResearch} from "@/src/lib/research";
 
 type Props={params:Promise<{slug:string}>};
 
 export function generateStaticParams(){
-  return researchSeries.map(series=>({slug:series.slug}));
+  return getPublishedSeries().map(series=>({slug:series.slug}));
 }
 
 export async function generateMetadata({params}:Props):Promise<Metadata>{
   const slug=(await params).slug;
-  const series=researchSeries.find(item=>item.slug===slug);
+  const series=getPublishedSeries().find(item=>item.slug===slug);
   if(!series)return{};
   return {title:series.title,description:series.subtitle};
 }
 
 export default async function SeriesPage({params}:Props){
   const slug=(await params).slug;
-  const series=researchSeries.find(item=>item.slug===slug);
+  const series=getPublishedSeries().find(item=>item.slug===slug);
   if(!series)notFound();
   const publications=series.items.map(getResearch).filter(Boolean);
   return <>
