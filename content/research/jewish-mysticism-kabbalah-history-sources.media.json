@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kircher Tree of Life.png",
+    "alt": "Athanasius Kircher's 1652 engraving of a Kabbalistic Tree of Life",
+    "caption": "Athanasius Kircher's 1652 Tree of Life is a powerful example of later Christian and Hermetic reception. It should not be mistaken for the visual form of ancient Jewish mysticism.",
+    "credit": "Athanasius Kircher / Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Kircher_Tree_of_Life.png",
+    "license": "Public domain"
+  },
+  "ezekiel": {
+    "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Visioen van Ezechiël met God en symbolen van vier evangelisten, RP-P-OB-4511KK(V).jpg",
+    "alt": "1538 woodcut depicting Ezekiel's divine throne vision and wheels within wheels",
+    "caption": "Ezekiel's throne vision became a major source for later Jewish and Christian esoteric interpretation.",
+    "credit": "Rijksmuseum / Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Visioen_van_Ezechi%C3%ABl_met_God_en_symbolen_van_vier_evangelisten,_RP-P-OB-4511KK(V).jpg",
+    "license": "CC0"
+  },
+  "yetzirah": {
+    "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yetzirah.png",
+    "alt": "Title page of Sefer Yetzirah printed in Mantua in 1562",
+    "caption": "Title page of a 1562 Mantua edition of Sefer Yetzirah.",
+    "credit": "Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Yetzirah.png",
+    "license": "Public domain"
+  },
+  "zohar": {
+    "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Zohar.png",
+    "alt": "Title page of the first printed edition of the Zohar, Mantua 1558",
+    "caption": "Title page of the first printed edition of the Zohar, Mantua, 1558.",
+    "credit": "Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Zohar.png",
+    "license": "Public domain"
+  }
+}
