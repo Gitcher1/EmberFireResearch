@@ -1,0 +1,1 @@
+import Link from "next/link"; export default function NotFound(){return <section className="page-intro"><span className="eyebrow">404 · Record not found</span><h1>This page is not in the archive.</h1><p>The address may have changed, or the requested investigation is not published.</p><p><Link className="button" href="/archive">Open the research archive</Link></p></section>}

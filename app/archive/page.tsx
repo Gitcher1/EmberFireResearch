@@ -1,0 +1,3 @@
+import {Suspense} from "react"; import type {Metadata} from "next"; import {getAllResearch} from "@/src/lib/research"; import {ArchiveFilters} from "@/components/research/ArchiveFilters";
+export const metadata:Metadata={title:"Research Archive",description:"The public record of EmberFire Research publications."};
+export default function Archive(){const items=getAllResearch().map(x=>x.meta);return <><header className="page-intro"><span className="eyebrow">Public record</span><h1>Research Archive</h1><p>The public record of EmberFire Research publications. Search investigations and filter the record by category, year, or topic.</p></header><section className="section"><Suspense><ArchiveFilters items={items}/></Suspense></section></>}
