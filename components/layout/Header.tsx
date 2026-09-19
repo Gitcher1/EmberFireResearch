@@ -1,4 +1,4 @@
 "use client";
 import Link from "next/link"; import {useState} from "react";
-const links=[["Research","/"],["Archive","/archive"],["Standards","/standards"],["About","/about"]];
+const links=[["Research","/"],["Archive","/archive"],["Threads","/threads"],["Standards","/standards"],["About","/about"]];
 export function Header(){const [open,setOpen]=useState(false);return <header className="site-header"><a className="skip" href="#main">Skip to content</a><div className="header-inner"><Link className="wordmark" href="/" aria-label="EmberFire Research home"><b>EMBERFIRE</b><span>RESEARCH</span></Link><button className="menu-button" aria-expanded={open} aria-controls="navigation" onClick={()=>setOpen(!open)}>Menu</button><nav id="navigation" aria-label="Primary" className={open?"open":""}>{links.map(([n,h])=><Link key={h} href={h} onClick={()=>setOpen(false)}>{n}</Link>)}<a className="parent-link" href="https://www.emberfire.io/" target="_blank" rel="noreferrer">EmberFire Media ↗</a></nav></div></header>}
