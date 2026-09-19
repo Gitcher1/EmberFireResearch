@@ -17,6 +17,17 @@ export const researchSeries:ResearchSeries[]=[
       "ethiopian-bible-81-book-canon",
       "visual-mandela-effect-shared-false-memory"
     ]
+  },
+  {
+    slug:"hidden-traditions-myth-mysticism-and-the-veil",
+    title:"Hidden Traditions: Myth, Mysticism & the Veil",
+    subtitle:"Three investigations into how ancient fragments become legendary figures, mystical systems, and claims about hidden reality.",
+    description:"Lilith, Kabbalah, and the Veil are often presented online as pieces of one timeless secret tradition. This series does something more useful: it restores the dates, texts, communities, transformations, and missing links. Read together, the three investigations show how traditions survive by changing—and how later systems can make very different historical layers look ancient at the same time.",
+    items:[
+      "lilith-sources-history-adams-first-wife",
+      "jewish-mysticism-kabbalah-history-sources",
+      "the-veil-hidden-reality-sacred-boundaries"
+    ]
   }
 ];
 
