@@ -8,6 +8,7 @@ export default function sitemap():MetadataRoute.Sitemap{
   return [
     {url:base,changeFrequency:"weekly",priority:1},
     {url:`${base}/archive`,changeFrequency:"weekly",priority:.8},
+    {url:`${base}/series`,changeFrequency:"weekly",priority:.8},
     {url:`${base}/threads`,changeFrequency:"weekly",priority:.8},
     {url:`${base}/standards`,changeFrequency:"monthly",priority:.6},
     {url:`${base}/about`,changeFrequency:"monthly",priority:.5},
