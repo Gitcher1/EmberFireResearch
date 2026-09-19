@@ -6,5 +6,13 @@
     "credit": "Wikimedia Commons",
     "source": "https://commons.wikimedia.org/wiki/File:Garima-Gospels-1.jpg",
     "license": "Public domain"
+  },
+  "gundaGunde": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Ethiopian_-_Leaf_from_Gunda_Gunde_Gospels_-_Walters_W850199R_-_Open_Obverse.jpg",
+    "alt": "Illuminated Ge'ez Gospel leaf from Ethiopia, circa 1540",
+    "caption": "Leaf from the Gunda Gunde Gospels, Ethiopia, circa 1540. The later manuscript illustrates the difference between the age of a textual tradition and the date of an individual surviving copy.",
+    "credit": "Walters Art Museum / Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Ethiopian_-_Leaf_from_Gunda_Gunde_Gospels_-_Walters_W850199R_-_Open_Obverse.jpg",
+    "license": "Public domain"
   }
 }
