@@ -1,0 +1,7 @@
+import { z } from "zod";
+export const CATEGORIES = ["Sacred Texts & Religion","History & Archaeology","Science & Technology","Consciousness & Human Experience","Claims, Evidence & Verification","Culture & Archives"] as const;
+const date = z.string().regex(/^\d{4}-\d{2}-\d{2}$/,"must be YYYY-MM-DD").refine(v=>!Number.isNaN(Date.parse(v)),"must be a valid date");
+export const mediaSchema=z.object({src:z.string().url(),alt:z.string().min(1),caption:z.string().min(1),credit:z.string().min(1),source:z.string().url(),license:z.string().min(1)});
+export const correctionSchema=z.object({date,version:z.string().min(1),description:z.string().min(1)});
+export const researchSchema=z.object({slug:z.string().regex(/^[a-z0-9-]+$/),title:z.string().min(1),subtitle:z.string().min(1),description:z.string().min(1),author:z.string().min(1),publisher:z.string().min(1),publishedAt:date,updatedAt:date.optional(),lastReviewedAt:date.optional(),version:z.string().min(1),status:z.enum(["draft","review","published","archived"]),featured:z.boolean().default(false),readingTimeMinutes:z.number().int().positive(),canonicalUrl:z.string().url(),category:z.enum(CATEGORIES),topics:z.array(z.string().min(1)),keywords:z.array(z.string().min(1)),hero:z.string().min(1),methodology:z.string().optional(),disclosures:z.array(z.string()).optional(),corrections:z.array(correctionSchema).optional()});
+export type ResearchMeta=z.infer<typeof researchSchema>; export type Media=z.infer<typeof mediaSchema>;
