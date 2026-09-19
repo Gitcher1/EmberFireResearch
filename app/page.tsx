@@ -5,7 +5,6 @@ import {researchSeries} from "@/src/data/research-series";
 export default function Home(){
   const featured=getFeatured();
   const all=getAllResearch();
-  const series=researchSeries[0];
   if(!featured)throw new Error("No featured publication");
 
   return <>
@@ -35,13 +34,19 @@ export default function Home(){
       <p className="statement">EmberFire Research publishes source-driven investigations that follow questions through documents, chronology, competing interpretations, and unresolved evidence.</p>
     </section>
 
-    <section className="series-strip">
-      <div>
-        <span className="eyebrow">Current research series</span>
-        <h2>{series.title}</h2>
-        <p>{series.subtitle}</p>
+    <section className="section series-home">
+      <div className="section-heading-row">
+        <div><span className="eyebrow">Editorial collections</span><h2 className="section-title">Research Series</h2></div>
+        <Link href="/series">View all series →</Link>
       </div>
-      <Link href={`/series/${series.slug}`}>Explore the 3-part series →</Link>
+      <div className="series-home-grid">
+        {researchSeries.map(series=><Link className="series-home-card" href={`/series/${series.slug}`} key={series.slug}>
+          <span className="label">{series.items.length}-part series</span>
+          <h3>{series.title}</h3>
+          <p>{series.subtitle}</p>
+          <span>Explore series →</span>
+        </Link>)}
+      </div>
     </section>
 
     <section className="section">
