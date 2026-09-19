@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import Link from "next/link";
-import {researchSeries} from "@/src/data/research-series";
+import {getPublishedSeries} from "@/src/data/research-series";
 import {getResearch} from "@/src/lib/research";
 
 export const metadata:Metadata={
@@ -9,6 +9,7 @@ export const metadata:Metadata={
 };
 
 export default function SeriesIndex(){
+  const researchSeries=getPublishedSeries();
   return <>
     <header className="page-intro">
       <span className="eyebrow">Editorial collections</span>
