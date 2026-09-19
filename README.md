@@ -1,6 +1,6 @@
 # EmberFire Research
 
-EmberFire Research is the source-driven, long-form research and investigations publication of EmberFire Media. The site is designed around inspectable evidence, readable investigations, explicit uncertainty, research notes, and durable publication records.
+EmberFire Research is the source-driven, long-form research and investigations publication of EmberFire Media. The site is designed around inspectable evidence, readable investigations, explicit uncertainty, research notes, durable publication records, and visible connections across investigations.
 
 ## Stack
 
@@ -36,12 +36,25 @@ npm run build
 2. Add or extend `content/research/<slug>.meta.json` with the required publication record.
 3. Add `content/research/<slug>.media.json` when media is used, including source, alt, caption, credit, and license data.
 4. Assign a valid category and granular topics.
-5. Set publication status (`draft`, `review`, `published`, or `archived`).
-6. Set featured status if appropriate; exactly one published investigation must be featured.
-7. Run validation, lint, typecheck, and the production build.
-8. Commit the publication and its companion records together.
+5. Add the article's curated section jumps in `src/data/article-navigation.ts`.
+6. Review `src/data/research-threads.ts` and connect the new article to every existing cross-investigation thread it materially overlaps; create a new thread only when the subject is genuinely reusable across investigations.
+7. Add or update series membership in `src/data/research-series.ts` when the article belongs to a defined editorial series.
+8. Set publication status (`draft`, `review`, `published`, or `archived`).
+9. Set featured status if appropriate; exactly one published investigation must be featured.
+10. Run validation, lint, typecheck, and the production build.
+11. Commit the publication and its companion records together.
 
 The archive, homepage publication indexes, sitemap, RSS feed, categories, years, and topic filters are generated automatically from validated publication metadata. There is no duplicate global catalog to maintain.
+
+### Navigation semantics
+
+EmberFire Research deliberately separates three kinds of navigation:
+
+- **Topics** classify an investigation and link to the Archive filtered by that subject.
+- **Jump to** links point to exact sections inside the current investigation.
+- **Research Threads** connect exact sections across multiple investigations when the same evidence question or subject recurs.
+
+Do not place a topic-looking pill inside a single article-wide link. A visible control must lead where its label implies.
 
 ## Deployment
 
