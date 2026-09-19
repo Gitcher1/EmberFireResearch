@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Qumran.jpeg",
+    "alt": "A cave at Qumran near the Dead Sea",
+    "caption": "Qumran cave near the Dead Sea, where the Dead Sea Scrolls were discovered. This photograph is contextual; it is not a photograph of an Enoch manuscript.",
+    "credit": "Effi Schweizer / Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Qumran.jpeg",
+    "license": "Public domain"
+  },
+  "ethiopicManuscript": {
+    "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/BL_Or_485_f._102r.png",
+    "alt": "Sixteenth-century Ge'ez manuscript page from the Book of Enoch",
+    "caption": "British Library Or. 485, folio 102r: the beginning of the Book of Enoch in Ge'ez, sixteenth century.",
+    "credit": "British Library / Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:BL_Or_485_f._102r.png",
+    "license": "Public domain"
+  },
+  "watchersArt": {
+    "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gustave_Dor%C3%A9-La_chute_des_anges_rebelles.jpg",
+    "alt": "Gustave Doré illustration of the fall of rebel angels",
+    "caption": "Gustave Doré's nineteenth-century Fall of the Rebel Angels. Used as later artistic interpretation, not as evidence for how ancient Enochic authors pictured the Watchers.",
+    "credit": "Gustave Doré / Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9-La_chute_des_anges_rebelles.jpg",
+    "license": "Public domain"
+  },
+  "jamesBruce": {
+    "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/James_Bruce,_1730-1794,_Head_and_Shoulders_Portrait.jpg",
+    "alt": "Portrait of Scottish traveler James Bruce",
+    "caption": "James Bruce (1730–1794), whose return from Ethiopia in 1773 brought complete Ge'ez manuscripts of 1 Enoch into wider European scholarly circulation.",
+    "credit": "Library of Congress / Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:James_Bruce,_1730-1794,_Head_and_Shoulders_Portrait.jpg",
+    "license": "Public domain"
+  }
+}
