@@ -1,10 +1,11 @@
 import Link from "next/link";
 import {getAllResearch,getFeatured,formatDate} from "@/src/lib/research";
-import {researchSeries} from "@/src/data/research-series";
+import {getPublishedSeries} from "@/src/data/research-series";
 
 export default function Home(){
   const featured=getFeatured();
   const all=getAllResearch();
+  const series=getPublishedSeries();
   if(!featured)throw new Error("No featured publication");
 
   return <>
@@ -40,7 +41,7 @@ export default function Home(){
         <Link href="/series">View all series →</Link>
       </div>
       <div className="series-home-grid">
-        {researchSeries.map(series=><Link className="series-home-card" href={`/series/${series.slug}`} key={series.slug}>
+        {series.map(series=><Link className="series-home-card" href={`/series/${series.slug}`} key={series.slug}>
           <span className="label">{series.items.length}-part series</span>
           <h3>{series.title}</h3>
           <p>{series.subtitle}</p>
