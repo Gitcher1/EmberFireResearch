@@ -7,6 +7,7 @@ import {mdxComponents} from "@/components/research/mdx-components";
 import {getArticleNavigation} from "@/src/data/article-navigation";
 import {entryHref,getThreadsForArticle} from "@/src/data/research-threads";
 import {getSeriesForArticle} from "@/src/data/research-series";
+import {getResearchBranches} from "@/src/data/research-branches";
 
 type Props={params:Promise<{slug:string}>};
 
@@ -34,6 +35,7 @@ export default async function ResearchPage({params}:Props){
   const jumpLinks=getArticleNavigation(m.slug);
   const threads=getThreadsForArticle(m.slug);
   const series=getSeriesForArticle(m.slug);
+  const branches=getResearchBranches(m.slug);
   const seriesIndex=series?series.items.indexOf(m.slug):-1;
   const previous=series&&seriesIndex>0?getResearch(series.items[seriesIndex-1]):undefined;
   const next=series&&seriesIndex<series.items.length-1?getResearch(series.items[seriesIndex+1]):undefined;
@@ -117,6 +119,24 @@ export default async function ResearchPage({params}:Props){
         {m.disclosures?.length?<section><h2 id="disclosures">Disclosures</h2>{m.disclosures.map(x=><p key={x}>{x}</p>)}</section>:null}
       </div>
     </div>
+
+    {branches.length>0&&<section className="research-branches">
+      <div className="connections-heading">
+        <span className="eyebrow">Open research queue</span>
+        <h2>Branch Investigations</h2>
+        <p>This parent investigation is publishable without pretending every branch has been exhausted. These are the major evidence tracks that have become large enough to deserve their own source-critical investigations.</p>
+      </div>
+      <div className="branch-grid">
+        {branches.map((branch,index)=><article className="branch-card" key={branch.title}>
+          <div className="branch-number">{String(index+1).padStart(2,"0")}</div>
+          <div>
+            <span className="label">{branch.status.replace("-"," ")}</span>
+            <h3>{branch.title}</h3>
+            <p>{branch.question}</p>
+          </div>
+        </article>)}
+      </div>
+    </section>}
 
     {threads.length>0&&<section className="connections">
       <div className="connections-heading">
