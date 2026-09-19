@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/British Museum Queen of the Night.jpg",
+    "alt": "Old Babylonian Queen of the Night relief showing a winged female figure with taloned feet, lions, and owls",
+    "caption": "The Old Babylonian Queen of the Night relief is frequently identified as Lilith online, but the British Museum does not identify the figure securely. The uncertainty is part of the evidence.",
+    "credit": "British Museum / Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:British_Museum_Queen_of_the_Night.jpg",
+    "license": "CC0"
+  },
+  "incantationBowl": {
+    "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/IncantationBowl.jpg",
+    "alt": "Late-antique Aramaic incantation bowl with circular inscription",
+    "caption": "Late-antique incantation bowls document protective household practice against Liliths and related beings.",
+    "credit": "Historical reproduction / Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:IncantationBowl.jpg",
+    "license": "Public domain"
+  }
+}
