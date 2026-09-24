@@ -103,7 +103,8 @@ export const researchThreads:ResearchThread[]=[
       {articleSlug:"visual-mandela-effect-shared-false-memory",heading:"What the evidence supports"},
       {articleSlug:"lilith-sources-history-adams-first-wife",heading:"Evidence status"},
       {articleSlug:"jewish-mysticism-kabbalah-history-sources",heading:"Evidence status"},
-      {articleSlug:"the-veil-hidden-reality-sacred-boundaries",heading:"Evidence status"}
+      {articleSlug:"the-veil-hidden-reality-sacred-boundaries",heading:"Evidence status"},
+      {articleSlug:"consciousness-brain-generated-mediated-fundamental",heading:"What the evidence supports",label:"What current consciousness research can and cannot establish"}
     ]
   }
 ];

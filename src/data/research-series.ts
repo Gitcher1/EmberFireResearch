@@ -37,5 +37,5 @@ export const researchSeries:ResearchSeries[]=[
 export function getPublishedSeries(){return researchSeries.filter(series=>series.status==="published");}
 
 export function getSeriesForArticle(slug:string){
-  return researchSeries.find(series=>series.items.includes(slug));
+  return researchSeries.find(series=>series.status==="published"&&series.items.includes(slug));
 }

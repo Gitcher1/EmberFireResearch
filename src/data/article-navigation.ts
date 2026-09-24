@@ -51,6 +51,19 @@ export const articleNavigation:Record<string,ArticleSectionLink[]>={
     {label:"Christian Cabala",heading:"Then Kabbalah leaves Judaism—and changes again"},
     {label:"Tarot & Golden Dawn",heading:"The Golden Dawn builds another Tree"}
   ],
+  "consciousness-brain-generated-mediated-fundamental":[
+    {label:"What consciousness means",heading:"First, consciousness is not one measurable thing"},
+    {label:"Brain dependence",heading:"Brain dependence is not a weak result"},
+    {label:"Theory test",heading:"The 2025 theory test did something consciousness research badly needed"},
+    {label:"Covert cognition",heading:"A person can be behaviorally silent without being cognitively absent"},
+    {label:"Anesthesia & sleep",heading:"Anesthesia is a controlled assault on simplistic theories"},
+    {label:"Psychedelics",heading:"Psychedelics do not give us a brain that has switched off"},
+    {label:"Cardiac arrest",heading:"Cardiac arrest is where timing becomes everything"},
+    {label:"Lucid episodes",heading:"Lucid episodes in severe dementia are real enough to study—and not yet understood"},
+    {label:"Filter theory",heading:"The filter theory is older and more serious than the modern receiver metaphor"},
+    {label:"Quantum claims",heading:"Quantum consciousness is not one theory, and quantum biology is not enough"},
+    {label:"What evidence supports",heading:"What the evidence supports"}
+  ],
   "the-veil-hidden-reality-sacred-boundaries":[
     {label:"The first veil",heading:"The first veil is a real curtain"},
     {label:"Sanctuary as cosmos",heading:"Josephus turns the sanctuary into a model of the universe"},

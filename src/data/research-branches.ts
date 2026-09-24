@@ -5,6 +5,14 @@ export type ResearchBranch={
 };
 
 export const researchBranches:Record<string,ResearchBranch[]>={
+  "consciousness-brain-generated-mediated-fundamental":[
+    {title:"The Timing Problem in Near-Death Experience",question:"Can prospective cardiac-arrest studies time-lock recalled experience to physiology tightly enough to distinguish experience during profound dysfunction from experience during loss or recovery of consciousness?",status:"queued"},
+    {title:"The Receiver Hypothesis",question:"Can filter or transmission theories be converted from metaphors into mechanisms with predictions that differ from production and realization models?",status:"queued"},
+    {title:"Lucidity at the Edge of Dementia",question:"What changes in arousal, network organization, physiology, and preserved cognition accompany prospectively observed lucid episodes in advanced dementia?",status:"queued"},
+    {title:"What Anesthesia Actually Removes",question:"Can experiments distinguish absent experience from absent environmental connectedness, memory formation, motor output, and later report across anesthetic states?",status:"queued"},
+    {title:"Quantum Consciousness Under Test",question:"Which quantum-consciousness proposal currently makes the clearest substrate-specific, timescale-specific, falsifiable prediction that classical neural models do not?",status:"queued"},
+    {title:"Ancient Minds, Modern Words",question:"How did ancient categories of soul, dream, awareness, self, and postmortem identity change across cultures, and where do modern translations falsely imply a shared scientific theory?",status:"queued"}
+  ],
   "jewish-mysticism-kabbalah-history-sources":[
     {title:"The Heavenly Palaces",question:"What can Hekhalot and Merkavah texts actually establish about ascent, divine names, gates, seals, and the dating of early Jewish mystical practice?",status:"queued"},
     {title:"Before the Sefirot Became the Tree",question:"How did Sefer Yetzirah's ten sefirot and twenty-two letters become the later visual and theosophical Tree of Life?",status:"queued"},
